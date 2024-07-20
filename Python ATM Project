@@ -1,0 +1,32 @@
+# ATM Machine Managment System Project
+Username = "Kiran"
+Password = "Kiran&2024"
+Customername = input("Enter your name")   # Enter your name
+Customerpassword = input("Enter your Password")  # Enter your Password
+if Customername == Username and Customerpassword == Password:
+    print('''
+    1.Deposite
+    2.Withdraw
+    3.Ministatement
+    4.exit
+    ''')
+    amount = 40000
+    option = int(input("Select your option: "))
+    if option == 1:
+        dep = int(input("Enter your amount"))
+        amount += dep
+        print("Total amount:", amount)
+    elif option == 2:
+        withd = int(input("Select your option:"))
+        amount -= withd
+        print("Total amount:", amount)
+    elif option == 3:
+        print("===ATM===")
+        print("Username:", Username)
+        print("Total Amount:", amount)
+        print("Thank for visiting")
+        print("===Atm===")
+    elif option == 4:
+        exit()
+else:
+    print("Please enter correct logins")
